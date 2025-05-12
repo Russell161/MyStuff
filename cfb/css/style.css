@@ -113,3 +113,58 @@ footer a:hover {
     grid-column: 1/2;
     height: 110px;
 }
+
+
+@media (max-width: 430px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .osu {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .home-grid > div {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home-grid img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    footer img {
+        width: 40px;
+    }
+
+    .header-msg {
+        grid-column: auto;
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .h-color {
+        font-size: 1.5rem;
+    }
+}
